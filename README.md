@@ -30,4 +30,4 @@ npm run build
 
 ## Deployment
 
-The intended deployment target for this site is GitHub Pages.
+This site is configured to deploy to GitHub Pages with GitHub Actions. Pushing to `main` will trigger the deployment workflow.

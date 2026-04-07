@@ -1,7 +1,13 @@
 import type { NextConfig } from "next";
+import { githubPagesBasePath } from "./lib/github-pages";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: githubPagesBasePath,
+  trailingSlash: true,
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
