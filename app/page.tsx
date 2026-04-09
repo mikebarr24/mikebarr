@@ -1,4 +1,7 @@
+import Link from "next/link";
+
 import { ProjectCard, type Project } from "./components/project-card";
+import { SiteHeader } from "./components/site-header";
 
 const projects: Project[] = [
   {
@@ -92,10 +95,9 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-50 px-6 py-16 text-zinc-950 dark:bg-black dark:text-zinc-50">
       <div className="mx-auto flex w-full max-w-5xl flex-col gap-16">
+        <SiteHeader currentPage="home" />
+
         <section className="max-w-3xl space-y-6">
-          <p className="text-sm font-medium uppercase tracking-[0.35em] text-zinc-500 dark:text-zinc-400">
-            Mike Barr
-          </p>
           <div className="space-y-4">
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
               Selected projects and product work.
@@ -104,6 +106,15 @@ export default function Home() {
               I build useful software with a focus on practical UX, clear
               systems, and products that solve real problems.
             </p>
+          </div>
+
+          <div className="flex flex-wrap gap-3">
+            <Link
+              href="/blog"
+              className="inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-medium text-zinc-900 transition hover:bg-zinc-100 dark:border-white/10 dark:bg-zinc-950 dark:text-zinc-100 dark:hover:bg-zinc-900"
+            >
+              Visit blog
+            </Link>
           </div>
         </section>
 
