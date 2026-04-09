@@ -14,7 +14,7 @@ export function SiteHeader({ currentPage }: SiteHeaderProps) {
     <header className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
       <Link
         href="/"
-        className="text-sm font-medium uppercase tracking-[0.35em] text-zinc-500 transition hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200"
+        className="text-base font-medium uppercase tracking-[0.35em] text-zinc-500 transition hover:text-zinc-700 sm:text-lg dark:text-zinc-400 dark:hover:text-zinc-200"
       >
         Mike Barr
       </Link>
