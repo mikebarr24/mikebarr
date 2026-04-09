@@ -4,7 +4,8 @@ import { useLayoutEffect, useState } from "react";
 
 export type Project = {
   name: string;
-  href: string;
+  status: "live" | "work-in-progress";
+  href?: string;
   summary: string;
   stack: string[];
   highlights: string[];
@@ -28,6 +29,11 @@ function getPanelId(projectName: string) {
 export function ProjectCard({ project }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const panelId = getPanelId(project.name);
+  const isWorkInProgress = project.status === "work-in-progress";
+  const statusClasses = isWorkInProgress
+    ? "border-amber-500/20 bg-amber-500/10 text-amber-700 dark:text-amber-300"
+    : "border-emerald-500/20 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300";
+  const statusLabel = isWorkInProgress ? "Work in progress" : "Live product";
 
   useLayoutEffect(() => {
     return () => {
@@ -36,15 +42,17 @@ export function ProjectCard({ project }: ProjectCardProps) {
   }, []);
 
   return (
-    <article className="rounded-3xl border border-black/10 bg-white p-8 shadow-sm dark:border-white/10 dark:bg-zinc-950">
+    <article className="rounded-3xl border border-black/10 bg-white p-5 shadow-sm sm:p-8 dark:border-white/10 dark:bg-zinc-950">
       <div className="flex flex-col">
-        <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+        <div className="flex flex-col gap-5 sm:gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-3xl space-y-4">
             <div className="space-y-3">
-              <div className="inline-flex rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700 dark:text-emerald-300">
-                Live product
+              <div
+                className={`inline-flex rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] ${statusClasses}`}
+              >
+                {statusLabel}
               </div>
-              <h3 className="text-2xl font-semibold tracking-tight">
+              <h3 className="text-xl font-semibold tracking-tight sm:text-2xl">
                 {project.name}
               </h3>
               <p className="text-base leading-7 text-zinc-600 dark:text-zinc-300">
@@ -61,35 +69,39 @@ export function ProjectCard({ project }: ProjectCardProps) {
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-2">
-              {project.stack.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-black/10 bg-zinc-100 px-3 py-1 text-sm text-zinc-700 dark:border-white/10 dark:bg-zinc-900 dark:text-zinc-300"
-                >
-                  {item}
-                </span>
-              ))}
-            </div>
+            {project.stack.length > 0 ? (
+              <div className="flex flex-wrap gap-2">
+                {project.stack.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-black/10 bg-zinc-100 px-3 py-1 text-sm text-zinc-700 dark:border-white/10 dark:bg-zinc-900 dark:text-zinc-300"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            ) : null}
           </div>
 
-          <div className="shrink-0">
-            <div className="flex flex-wrap gap-3 lg:justify-end">
-              <a
-                href={project.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-zinc-800 dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
-              >
-                Visit site
-              </a>
+          <div className="w-full shrink-0 lg:w-auto">
+            <div className="flex w-full flex-col gap-3 sm:flex-row lg:w-auto lg:justify-end">
+              {project.href ? (
+                <a
+                  href={project.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex w-full items-center justify-center rounded-full bg-zinc-950 px-5 py-3 text-sm font-medium text-white transition hover:bg-zinc-800 sm:w-auto dark:bg-white dark:text-zinc-950 dark:hover:bg-zinc-200"
+                >
+                  Visit site
+                </a>
+              ) : null}
 
               <button
                 type="button"
                 aria-expanded={isExpanded}
                 aria-controls={panelId}
                 onClick={() => setIsExpanded((expanded) => !expanded)}
-                className="inline-flex items-center justify-center gap-2 rounded-full border border-black/10 bg-zinc-100 px-5 py-3 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200 dark:border-white/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-black/10 bg-zinc-100 px-5 py-3 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200 sm:w-auto dark:border-white/10 dark:bg-zinc-900 dark:text-zinc-100 dark:hover:bg-zinc-800"
               >
                 <span>{isExpanded ? "Hide details" : "More Info"}</span>
                 <svg
@@ -124,12 +136,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
             <div
               id={panelId}
               aria-hidden={!isExpanded}
-              className={`rounded-3xl border border-black/10 bg-zinc-50/80 p-6 transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none dark:border-white/10 dark:bg-zinc-900/50 ${
+              className={`rounded-3xl border border-black/10 bg-zinc-50/80 p-4 sm:p-6 transition-[transform,opacity] duration-300 ease-out motion-reduce:transition-none dark:border-white/10 dark:bg-zinc-900/50 ${
                 isExpanded ? "translate-y-0" : "-translate-y-2"
               }`}
             >
-              <div className="grid gap-4 lg:grid-cols-2">
-                <section className="rounded-2xl border border-black/10 bg-white/80 p-5 dark:border-white/10 dark:bg-black/20">
+              <div className="grid gap-3 sm:gap-4 lg:grid-cols-2">
+                <section className="rounded-2xl border border-black/10 bg-white/80 p-4 sm:p-5 dark:border-white/10 dark:bg-black/20">
                   <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500 dark:text-zinc-400">
                     Project overview
                   </h4>
@@ -141,7 +153,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 {project.details.sections.map((section) => (
                   <section
                     key={section.title}
-                    className="rounded-2xl border border-black/10 bg-white/80 p-5 dark:border-white/10 dark:bg-black/20"
+                    className="rounded-2xl border border-black/10 bg-white/80 p-4 sm:p-5 dark:border-white/10 dark:bg-black/20"
                   >
                     <h4 className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500 dark:text-zinc-400">
                       {section.title}

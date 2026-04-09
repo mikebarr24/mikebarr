@@ -3,6 +3,7 @@ import { ProjectCard, type Project } from "./components/project-card";
 const projects: Project[] = [
   {
     name: "Logical Fitness",
+    status: "live",
     href: "https://logicalfitness.ai",
     summary:
       "AI-generated fitness plans tailored to each user's goals, experience, available equipment, and health considerations.",
@@ -38,6 +39,48 @@ const projects: Project[] = [
             "The app is built with Next.js and TypeScript, with MongoDB for persistence and NextAuth for authentication.",
             "OpenAI is used to help generate personalized workout programming based on the user's inputs and constraints.",
             "The stack is aimed at supporting flexible plan generation while keeping the overall experience fast and approachable.",
+          ],
+        },
+      ],
+    },
+  },
+  {
+    name: "draft-path",
+    status: "work-in-progress",
+    summary:
+      "A concept-to-plan MVP that turns one idea into short iterative suggestions, learns from likes and skips, and grows that signal into a structured plan.",
+    stack: ["Next.js", "TypeScript", "Drizzle", "OpenAI", "Tailwind CSS"],
+    highlights: [
+      "Starts from a single concept and generates a batch of short, focused ideas to react to.",
+      "Uses like and skip feedback to save promising directions and trigger plan generation.",
+      "Keeps refining from the original concept, saved ideas, and latest plan instead of resetting each round.",
+    ],
+    details: {
+      overview:
+        "draft-path is an in-progress product exploring a lightweight concept-to-plan workflow, so this site surfaces context about the direction without linking to a public app yet.",
+      sections: [
+        {
+          title: "Core flow",
+          items: [
+            "A user starts with a single concept, then reviews a batch of small ideas generated from that starting point.",
+            "Liked ideas are saved while skipped ideas are discarded, creating a simple feedback loop that sharpens the direction over time.",
+            "Once enough signal has been gathered, the app generates a lightweight plan and uses it to inform the next round of refinements.",
+          ],
+        },
+        {
+          title: "Product focus",
+          items: [
+            "The product is designed around incremental progress rather than one oversized AI response.",
+            "Each generated idea should be small, clear, and grounded in the current direction instead of suggesting a disruptive pivot.",
+            "The aim is to help a concept become more concrete through repeated, practical iterations.",
+          ],
+        },
+        {
+          title: "Current state",
+          items: [
+            "The repository is still at scaffold stage, with the MVP structure and workflow defined before a public launch.",
+            "The planned stack centres on Next.js, Tailwind CSS, Drizzle, and OpenAI-backed idea and plan generation.",
+            "Because the product is still in progress, the card intentionally shows only a More Info button for now.",
           ],
         },
       ],
