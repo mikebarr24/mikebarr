@@ -1,0 +1,49 @@
+[
+  {
+    "slug": "designing-a-static-ai-assisted-blog",
+    "status": "published",
+    "title": "Designing a static AI-assisted blog",
+    "summary": "A simple pattern for publishing weekly posts from JSON while keeping validation strict and deployment predictable.",
+    "publishedAt": "2026-04-09",
+    "readingTimeMinutes": 4,
+    "featured": true,
+    "tags": ["AI", "Blogging", "Static sites"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This site stays deliberately simple: blog posts live in a JSON file, the build validates them, and GitHub Pages serves the exported result."
+      },
+      {
+        "type": "heading",
+        "text": "Why this works well"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The content format is explicit, so an AI writer has a clear contract to follow.",
+          "The build fails early if a post has the wrong shape or an invalid slug.",
+          "Deployment stays static, with no CMS or runtime database to manage."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "That combination keeps the authoring flow lightweight without making the site fragile."
+      }
+    ]
+  },
+  {
+    "slug": "weekly-ideas-archive",
+    "status": "draft",
+    "title": "Weekly ideas archive",
+    "summary": "A draft placeholder showing how unpublished posts can live alongside published ones.",
+    "updatedAt": "2026-04-09",
+    "readingTimeMinutes": 3,
+    "tags": ["Workflow"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Draft posts stay out of the generated archive until their status changes to published."
+      }
+    ]
+  }
+]

@@ -1,0 +1,69 @@
+[
+  {
+    "slug": "introducing-this-site",
+    "status": "published",
+    "title": "Introducing this site",
+    "summary": "A quick note on what this site is for, and why it was built in a fast, deliberately simple first pass.",
+    "publishedAt": "2026-04-09",
+    "readingTimeMinutes": 3,
+    "tags": ["Launch", "Site", "Shipping"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This site is a simple place to collect selected projects, product work, and short notes about how they are being built. Rather than scatter that context across different profiles and repos, it felt better to put everything in one clear home."
+      },
+      {
+        "type": "heading",
+        "text": "Built quickly on purpose"
+      },
+      {
+        "type": "paragraph",
+        "text": "The first version came together quickly because the goal was not to design a huge platform. It was to get something useful online: a lightweight homepage, a small projects section, and a blog that can publish static posts without adding a CMS or extra infrastructure."
+      },
+      {
+        "type": "list",
+        "items": [
+          "The site uses a straightforward Next.js setup with static generation.",
+          "Projects and writing are presented with just enough structure to be easy to update.",
+          "The blog content lives in JSON, which keeps publishing fast and the build predictable."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "That quick development pace was part of the point. A personal site should be easy to maintain, easy to extend, and useful from day one. This version does that, and it leaves plenty of room to refine the details over time."
+      }
+    ]
+  },
+  {
+    "slug": "designing-a-static-ai-assisted-blog",
+    "status": "published",
+    "title": "Designing a static AI-assisted blog",
+    "summary": "A simple pattern for publishing weekly posts from JSON while keeping validation strict and deployment predictable.",
+    "publishedAt": "2026-04-09",
+    "readingTimeMinutes": 4,
+    "featured": true,
+    "tags": ["AI", "Blogging", "Static sites"],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This site stays deliberately simple: blog posts live in a JSON file, the build validates them, and GitHub Pages serves the exported result."
+      },
+      {
+        "type": "heading",
+        "text": "Why this works well"
+      },
+      {
+        "type": "list",
+        "items": [
+          "The content format is explicit, so an AI writer has a clear contract to follow.",
+          "The build fails early if a post has the wrong shape or an invalid slug.",
+          "Deployment stays static, with no CMS or runtime database to manage."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "That combination keeps the authoring flow lightweight without making the site fragile."
+      }
+    ]
+  }
+]

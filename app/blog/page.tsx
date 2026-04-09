@@ -1,45 +1,11 @@
 import type { Metadata } from "next";
 
+import { getPublishedBlogPosts } from "./_lib/blog-posts";
+import { BlogPostList } from "./blog-post-list";
 import { SiteHeader } from "../components/site-header";
+import { withBasePath } from "@/lib/github-pages";
 
-type PlannedTopic = {
-  title: string;
-  summary: string;
-  focus: string[];
-};
-
-const plannedTopics: PlannedTopic[] = [
-  {
-    title: "Shipping useful AI features",
-    summary:
-      "Short notes on where AI genuinely improves a product and where simpler UX decisions usually matter more.",
-    focus: [
-      "Keeping AI outputs grounded in user context",
-      "Designing flows that feel guided instead of noisy",
-      "Balancing flexibility with trust and clarity",
-    ],
-  },
-  {
-    title: "Product decisions in the open",
-    summary:
-      "Write-ups on trade-offs, iteration paths, and why certain product choices win over more complicated ideas.",
-    focus: [
-      "Reducing friction in onboarding and setup",
-      "Finding the smallest useful version of a feature",
-      "Learning from what users actually need",
-    ],
-  },
-  {
-    title: "Notes from building and refining",
-    summary:
-      "Practical engineering observations from working on small products, polishing interfaces, and tightening systems over time.",
-    focus: [
-      "Structuring interfaces for clarity and momentum",
-      "Improving maintainability without overbuilding",
-      "Turning rough concepts into sharper releases",
-    ],
-  },
-];
+const publishedPosts = getPublishedBlogPosts();
 
 export const metadata: Metadata = {
   title: "Blog | Mike Barr",
@@ -68,53 +34,27 @@ export default function BlogPage() {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-zinc-950">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500 dark:text-zinc-400">
-              Coming soon
-            </p>
-            <p className="mt-3 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
-              The first posts are still being written, but the blog landing page
-              is now in place and ready to grow into a proper writing archive.
-            </p>
-          </div>
-        </section>
-
-        <section className="space-y-6">
-          <div className="space-y-2">
-            <p className="text-sm font-medium uppercase tracking-[0.3em] text-zinc-500 dark:text-zinc-400">
-              Planned topics
-            </p>
-            <h2 className="text-2xl font-semibold tracking-tight">
-              What will show up here
-            </h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {plannedTopics.map((topic) => (
-              <article
-                key={topic.title}
-                className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-zinc-950"
-              >
-                <div className="space-y-3">
-                  <h3 className="text-xl font-semibold tracking-tight">
-                    {topic.title}
-                  </h3>
-                  <p className="text-sm leading-7 text-zinc-600 dark:text-zinc-300">
-                    {topic.summary}
-                  </p>
-                </div>
-
-                <ul className="mt-5 space-y-3 text-sm leading-6 text-zinc-600 dark:text-zinc-300">
-                  {topic.focus.map((item) => (
-                    <li key={item} className="flex gap-3">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-zinc-400 dark:bg-zinc-500" />
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </article>
-            ))}
-          </div>
+          {publishedPosts.length > 0 ? (
+            <BlogPostList posts={publishedPosts} />
+          ) : (
+            <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm dark:border-white/10 dark:bg-zinc-950">
+              <p className="text-sm font-semibold uppercase tracking-[0.22em] text-zinc-500 dark:text-zinc-400">
+                Coming soon
+              </p>
+              <p className="mt-3 text-sm leading-7 text-zinc-600 dark:text-zinc-300">
+                Add entries to <code>data/blog-posts.json</code> and validate
+                them against the published schema at{" "}
+                <a
+                  href={withBasePath("/blog-posts.schema.json")}
+                  className="font-medium text-zinc-700 underline underline-offset-4 transition hover:text-zinc-950 dark:text-zinc-200 dark:hover:text-white"
+                >
+                  /blog-posts.schema.json
+                </a>
+                . Published posts are turned into static pages automatically at
+                build time.
+              </p>
+            </div>
+          )}
         </section>
       </div>
     </main>

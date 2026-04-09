@@ -28,6 +28,14 @@ npm run build
 - TypeScript
 - Tailwind CSS
 
+## Blog content
+
+Blog posts are stored in `data/blog-posts.json` and validated during the build.
+
+- Use `public/blog-posts.schema.json` as the contract for generated content.
+- Use `data/blog-posts.example.json` as a concrete example payload.
+- Set `status` to `published` to generate a static page under `/blog/[slug]/`.
+
 ## Deployment
 
 This site is configured to deploy to GitHub Pages with GitHub Actions. Pushing to `main` will trigger the deployment workflow.
