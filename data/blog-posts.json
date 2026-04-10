@@ -6,7 +6,11 @@
     "summary": "A quick note on what this site is for, and why it was built in a fast, deliberately simple first pass.",
     "publishedAt": "2026-04-09",
     "readingTimeMinutes": 3,
-    "tags": ["Launch", "Site", "Shipping"],
+    "tags": [
+      "Launch",
+      "Site",
+      "Shipping"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -42,7 +46,11 @@
     "publishedAt": "2026-04-09",
     "readingTimeMinutes": 4,
     "featured": true,
-    "tags": ["AI", "Blogging", "Static sites"],
+    "tags": [
+      "AI",
+      "Blogging",
+      "Static sites"
+    ],
     "content": [
       {
         "type": "paragraph",
@@ -63,6 +71,66 @@
       {
         "type": "paragraph",
         "text": "That combination keeps the authoring flow lightweight without making the site fragile."
+      }
+    ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-04-10",
+    "status": "published",
+    "title": "Weekly coding update, auth, concept flow, and a new site",
+    "summary": "A week spent turning Draft Path into more of a real product, while also getting a personal site and static blog live on GitHub Pages.",
+    "publishedAt": "2026-04-10",
+    "readingTimeMinutes": 4,
+    "tags": [
+      "Weekly update",
+      "Next.js",
+      "Authentication",
+      "Shipping"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week split neatly across two repositories. Most of the deeper product work happened in Draft Path, while a separate push got this personal site live with a small static blog and GitHub Pages deployment."
+      },
+      {
+        "type": "heading",
+        "text": "Draft Path started to feel like a real app"
+      },
+      {
+        "type": "paragraph",
+        "text": "The biggest change was authentication. Draft Path picked up a substantial NextAuth v5 integration, including credentials sign-in and OAuth options for Google and GitHub. That work touched 45 files in PR #15, added auth routes and forms, tightened sign-in error handling, preserved callback redirects, and included a fair amount of follow-on cleanup around validation, route protection, and session shape."
+      },
+      {
+        "type": "list",
+        "items": [
+          "PR #15 merged with credentials plus Google and GitHub auth, protected-route updates, and supporting test coverage.",
+          "PR #14 added an AI-powered concept clarification flow at /new, backed by schema and migration changes, UI updates, and test fixes.",
+          "Smaller follow-up work tightened the UI: a reusable Button component landed in PR #17, the navbar was simplified in PR #20, and the npm lockfile was refreshed in PR #21."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "What I like about that set of changes is that it was not just feature accumulation. The thread running through it was turning rough edges into something more coherent: clearer auth flows, better form behaviour, more reusable UI primitives, and a concept-entry path that feels much closer to the actual product."
+      },
+      {
+        "type": "heading",
+        "text": "The personal site also went from blank to publishable"
+      },
+      {
+        "type": "paragraph",
+        "text": "Alongside the app work, I stood up the mikebarr repository and pushed it through to a working static site. Over a short run of commits, that meant setting up GitHub Pages deployment, adding a homepage and project showcase, creating blog index and post pages, switching blog content to a validated JSON contract, and then publishing the first posts through that system."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Set up the GitHub Pages deployment flow for the site.",
+          "Built the homepage, project card, and blog pages in Next.js.",
+          "Added the blog schema and example data so posts can be published as static content with build-time validation."
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So the week was a good mix of infrastructure and product detail: getting a personal publishing setup online, while also making Draft Path more usable and more believable as an application people could actually sign into and use."
       }
     ]
   }
