@@ -73,5 +73,56 @@
         "text": "That combination keeps the authoring flow lightweight without making the site fragile."
       }
     ]
+  },
+  {
+    "slug": "from-prototype-to-something-usable",
+    "status": "published",
+    "title": "From prototype to something usable",
+    "summary": "This week was about turning rough product ideas into something people can actually use, while also launching a simple site to show the work in public.",
+    "publishedAt": "2026-04-10",
+    "readingTimeMinutes": 4,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Shipping"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "A lot of this week went into making things feel more real. Rather than adding flashy new surfaces, the work focused on the parts that turn a promising prototype into something usable: clearer flows, better structure, fewer rough edges, and a simpler way to talk about the work publicly."
+      },
+      {
+        "type": "heading",
+        "text": "Making Draft Path feel like a product"
+      },
+      {
+        "type": "paragraph",
+        "text": "The biggest chunk of coding time went into Draft Path. One thread was about the front door: adding proper sign-in and sign-up, supporting both password-based login and social sign-in, and tightening the way protected parts of the app behave. That is not the most glamorous work, but it matters because it is the difference between a demo and something a person could genuinely return to and use."
+      },
+      {
+        "type": "paragraph",
+        "text": "Another thread was about helping people get ideas into the product more cleanly. The new idea entry flow can now ask for one clarifying step before saving, which is a small interaction change but an important product decision. It shifts the experience away from dumping text into a box and toward helping a rough thought become something more usable."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Finished the first proper authentication setup and the surrounding sign-in, sign-up, and sign-out flow.",
+          "Merged the new guided idea-entry flow so concept capture feels more structured.",
+          "Spent time on the quality layer too: shared UI components, better error handling, test fixes, and small navigation clean-ups."
+        ]
+      },
+      {
+        "type": "heading",
+        "text": "Shipping the public side too"
+      },
+      {
+        "type": "paragraph",
+        "text": "Alongside that product work, this week also included building and launching this site. The first version started as a very small personal homepage, then quickly picked up a projects section, a blog, and the GitHub Pages deployment needed to make it real. That meant the week was not only about building software, but also about creating a clearer public place to document it."
+      },
+      {
+        "type": "paragraph",
+        "text": "What ties the week together is a fairly simple theme: moving from placeholders to working paths. Sign-in now works. The idea flow has more shape. The public site exists. None of that is dramatic on its own, but together it feels like real progress toward something sturdier and easier to keep building on."
+      }
+    ]
   }
 ]
