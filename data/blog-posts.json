@@ -73,5 +73,56 @@
         "text": "That combination keeps the authoring flow lightweight without making the site fragile."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-04-19",
+    "status": "published",
+    "title": "Weekly coding update, shaping an idea into a product",
+    "summary": "Most of this week went into Draft Path, turning an early concept-capture tool into something that feels more like a real product people could keep using.",
+    "publishedAt": "2026-04-19",
+    "readingTimeMinutes": 4,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Shipping"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Most of my coding time this week went into Draft Path, a private project that is gradually moving from rough idea to usable product. The work was less about flashy new surface area and more about tightening the flow so it feels coherent from the moment someone signs in."
+      },
+      {
+        "type": "heading",
+        "text": "Turning loose ideas into a clearer journey"
+      },
+      {
+        "type": "paragraph",
+        "text": "A big theme this week was giving ideas more structure. I added ownership so concepts belong to the person creating them, built out a proper place to browse saved concepts, and improved some of the shared interface pieces that make the product feel more consistent."
+      },
+      {
+        "type": "paragraph",
+        "text": "The larger push was around what happens after an idea is captured. Instead of stopping at a quick note, the project is starting to support a fuller path: reviewing possibilities, shaping them, and turning them into something closer to a plan. That felt like an important step from simple storage toward something genuinely useful."
+      },
+      {
+        "type": "heading",
+        "text": "Working on the practical edges too"
+      },
+      {
+        "type": "paragraph",
+        "text": "Alongside the core flow, I spent time on the less glamorous product work that usually matters just as much. That included a framework update, some navigation cleanup, and early subscription and usage-limit work so the project has a clearer path to being sustainable if it keeps growing."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made saved concepts feel more personal and organised",
+          "Started turning idea capture into a fuller review-and-plan workflow",
+          "Began laying the groundwork for paid access and free-tier limits"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So this week felt like product-shaping work more than pure feature-chasing. The project is still early, but it now has more of the bones it needs to become something people could return to rather than just try once."
+      }
+    ]
   }
 ]
