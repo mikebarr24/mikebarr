@@ -124,5 +124,52 @@
         "text": "So this week felt like product-shaping work more than pure feature-chasing. The project is still early, but it now has more of the bones it needs to become something people could return to rather than just try once."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-04-27",
+    "status": "published",
+    "title": "Weekly coding update, making Draft Path more real",
+    "summary": "This week’s coding work was focused and practical: another round of Draft Path work to make its new subscription flow sturdier, clearer, and closer to something real users could trust.",
+    "publishedAt": "2026-04-27",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Billing"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "Most of this week’s coding signal points to Draft Path again, but in a narrower and more practical way than last week. The focus was not really on expanding the product outward. It was on making a key commercial part of it feel less rough: how someone moves from trying the product to paying for it."
+      },
+      {
+        "type": "heading",
+        "text": "A clearer try-before-you-pay shape"
+      },
+      {
+        "type": "paragraph",
+        "text": "The product direction now looks more defined. Instead of locking everything behind payment immediately, the flow is being shaped around a small amount of free use first, then a subscription once someone wants to go further. That is a better fit for an early product because it gives people enough room to understand the value before being asked to commit."
+      },
+      {
+        "type": "paragraph",
+        "text": "What stood out this week was the follow-through on that decision. The work centred on tightening the billing flow itself, especially around Stripe, so the system is easier to reason about and less likely to fail in confusing ways."
+      },
+      {
+        "type": "heading",
+        "text": "Stabilising the messy edges"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Worked on making subscription-related errors more consistent and easier to handle",
+          "Fixed failures in the payment pipeline so the upgrade path is more dependable",
+          "Kept pushing Draft Path from a promising idea tool toward a product with a real business model behind it"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So this was a quieter kind of progress, but important progress all the same. A lot of early software can demonstrate an idea; the harder part is making the whole experience trustworthy enough that someone could actually use it, pay for it, and come back. This week felt like work in that direction."
+      }
+    ]
   }
 ]
