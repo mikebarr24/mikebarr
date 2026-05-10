@@ -171,5 +171,56 @@
         "text": "So this was a quieter kind of progress, but important progress all the same. A lot of early software can demonstrate an idea; the harder part is making the whole experience trustworthy enough that someone could actually use it, pay for it, and come back. This week felt like work in that direction."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-05-10",
+    "status": "published",
+    "title": "Weekly coding update, trying a sharper product shape",
+    "summary": "This week mixed a small new browser-extension experiment with continued work on Draft Path’s subscription model and free-tier shape.",
+    "publishedAt": "2026-05-10",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Experiments"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a lighter but interesting coding week, with the work split between two different kinds of progress: a fresh browser-extension experiment and another step toward making Draft Path feel like a product with a clearer business shape."
+      },
+      {
+        "type": "heading",
+        "text": "A small experiment around calmer browsing"
+      },
+      {
+        "type": "paragraph",
+        "text": "The new experiment was NopeTube, a browser extension aimed at making YouTube feel a bit more intentional. The work this week was mostly about getting the basics into place: a readable project description, proper extension icons, and a more predictable way for the extension to decide what it is looking at."
+      },
+      {
+        "type": "paragraph",
+        "text": "That might sound small, but it is the kind of foundation that helps an idea become testable. Instead of staying as a vague concept, NopeTube now has enough shape to explain what it is for and enough polish to start feeling like something that could be installed and tried."
+      },
+      {
+        "type": "heading",
+        "text": "Keeping Draft Path commercially grounded"
+      },
+      {
+        "type": "paragraph",
+        "text": "Draft Path also continued in the background, with the main theme still centred on subscriptions and free-tier limits. The direction is becoming more deliberate: let people try the product with a limited amount of use, then introduce paid access when they want to go further."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Started shaping a new browser-extension idea into something more concrete",
+          "Added the basic polish and project framing needed for NopeTube to be understandable",
+          "Kept pushing Draft Path toward a clearer try-first, subscribe-later model"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, this week felt less like one big feature push and more like product positioning work. One project is being given enough structure to become a real experiment, while the other is continuing to work through the practical question of how an early product should invite people in and eventually support itself."
+      }
+    ]
   }
 ]
