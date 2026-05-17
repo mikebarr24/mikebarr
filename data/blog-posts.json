@@ -222,5 +222,56 @@
         "text": "Overall, this week felt less like one big feature push and more like product positioning work. One project is being given enough structure to become a real experiment, while the other is continuing to work through the practical question of how an early product should invite people in and eventually support itself."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-05-17",
+    "status": "published",
+    "title": "Weekly coding update, making small experiments sturdier",
+    "summary": "This week was a quieter coding week, focused on making NopeTube behave more reliably while Draft Path continued to move toward a clearer free-to-paid product shape.",
+    "publishedAt": "2026-05-17",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Experiments"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a narrower coding week than the last couple, but still a useful one. The main visible progress was on NopeTube, the browser-extension experiment around making YouTube feel a bit calmer and more intentional."
+      },
+      {
+        "type": "heading",
+        "text": "Making NopeTube feel less fragile"
+      },
+      {
+        "type": "paragraph",
+        "text": "The work this week was about making the extension better at dealing with how people actually browse. YouTube does not always behave like a normal page load, so NopeTube now has more attention on what happens when someone moves around inside the site rather than only when the first page appears."
+      },
+      {
+        "type": "paragraph",
+        "text": "There was also work on giving the extension better context before it decides what to block or allow. Instead of judging from a thin slice of information, it can use more of the surrounding signal, such as the channel and tags. That should make the whole experiment feel more useful and less blunt."
+      },
+      {
+        "type": "heading",
+        "text": "Draft Path keeps moving in the background"
+      },
+      {
+        "type": "paragraph",
+        "text": "Draft Path also stayed active, with the same practical theme as recent weeks: shaping a product that people can try for free, then pay for if they want to keep going. That is not glamorous work, but it matters because it turns a promising idea tool into something with a more sustainable path."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made NopeTube respond better as people move around YouTube",
+          "Improved the context used when deciding what the extension should do",
+          "Kept Draft Path moving toward a clearer free-tier and subscription model"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, this week felt like maintenance in the best sense: taking small experiments seriously enough to make them steadier, clearer, and easier to trust."
+      }
+    ]
   }
 ]
