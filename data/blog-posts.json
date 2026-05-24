@@ -277,51 +277,51 @@
   {
     "slug": "weekly-coding-update-2026-05-24",
     "status": "published",
-    "title": "Weekly coding update, making the product easier to work on",
-    "summary": "This week was mostly about Draft Path again: less new surface area, more work to make the product cleaner, steadier, and easier to keep improving.",
+    "title": "Weekly coding update, turning Draft Path into a paid product",
+    "summary": "This week was a bigger Draft Path week than it first looked: the Stripe subscription paywall landed, alongside follow-up cleanup for the idea and plan workflow.",
     "publishedAt": "2026-05-24",
     "readingTimeMinutes": 3,
     "tags": [
       "Weekly update",
       "Product",
-      "Refinement"
+      "Billing"
     ],
     "content": [
       {
         "type": "paragraph",
-        "text": "This was another focused Draft Path week. The visible changes were fairly small, but the direction was useful: making the product easier to understand, easier to maintain, and a little more ready for the next round of user-facing work."
+        "text": "This was a much more substantial Draft Path week than a quick commit scan suggested. The biggest milestone was landing the Stripe subscription work: a free tier, a paywall after the first concept, and the plumbing needed for real subscription access rather than just a theoretical pricing page."
       },
       {
         "type": "heading",
-        "text": "Cleaning up the foundations"
+        "text": "Making payment part of the product"
       },
       {
         "type": "paragraph",
-        "text": "A good chunk of the work went into tidying how the app talks to its data layer. That kind of change does not make for a dramatic demo, but it matters because it reduces the amount of logic sitting directly inside product actions. The result should be a codebase that is easier to reason about and less awkward to extend."
+        "text": "The important shift is that Draft Path now has the bones of a commercial product. Users can try the core idea first, then move into a paid path when they want to keep creating. That is a meaningful step because it connects the product experience to a business model without forcing payment before the value is clear."
       },
       {
         "type": "paragraph",
-        "text": "That is the quieter side of building a product: once the basic shape exists, the next useful step is often to make the internals less tangled. It gives future features somewhere cleaner to land."
+        "text": "There was a lot of practical work behind that: checkout, subscription status, portal handling, webhook behaviour, access gating, and tests around the risky edges. It is the sort of work that should mostly disappear when it is working well, but it is central to whether the product can actually be used and trusted."
       },
       {
         "type": "heading",
-        "text": "Moving toward a better workspace"
+        "text": "Cleaning up after the milestone"
       },
       {
         "type": "paragraph",
-        "text": "There was also progress around the product experience itself, especially the idea of giving concepts a clearer dashboard and supporting revisions to plans. That points Draft Path toward something more durable than one-shot idea generation: a place where ideas can be reviewed, improved, and shaped over time."
+        "text": "After the Stripe merge, the week also included cleanup in Draft Path itself: moving data reads into clearer query modules, improving the idea-to-plan flow, and adding some small interface polish. That follow-through matters because a big feature landing is only half the job; the next step is making the codebase and product shape easier to keep building on."
       },
       {
         "type": "list",
         "items": [
-          "Made parts of Draft Path's data access cleaner and easier to maintain",
-          "Continued shaping the concept dashboard and plan revision flow",
-          "Added a small navigation polish pass so the product feels a little more deliberate"
+          "Merged the Stripe subscription paywall and free-tier concept limit",
+          "Added the supporting checkout, portal, webhook, access-gating, and test coverage needed around billing",
+          "Continued shaping the concept dashboard, plan revision flow, and internal data access patterns"
         ]
       },
       {
         "type": "paragraph",
-        "text": "Overall, this was a maintenance-and-refinement week, but in a constructive way. Draft Path is moving from proving that the core idea works toward becoming a product that can keep growing without every new feature making the whole thing heavier."
+        "text": "Overall, this felt like a week where Draft Path became more real. The product is no longer just about generating and shaping ideas; it now has more of the structure needed to become something people can try, pay for, and keep returning to."
       }
     ]
   }
