@@ -273,5 +273,56 @@
         "text": "Overall, this week felt like maintenance in the best sense: taking small experiments seriously enough to make them steadier, clearer, and easier to trust."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-05-24",
+    "status": "published",
+    "title": "Weekly coding update, making the product easier to work on",
+    "summary": "This week was mostly about Draft Path again: less new surface area, more work to make the product cleaner, steadier, and easier to keep improving.",
+    "publishedAt": "2026-05-24",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Refinement"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was another focused Draft Path week. The visible changes were fairly small, but the direction was useful: making the product easier to understand, easier to maintain, and a little more ready for the next round of user-facing work."
+      },
+      {
+        "type": "heading",
+        "text": "Cleaning up the foundations"
+      },
+      {
+        "type": "paragraph",
+        "text": "A good chunk of the work went into tidying how the app talks to its data layer. That kind of change does not make for a dramatic demo, but it matters because it reduces the amount of logic sitting directly inside product actions. The result should be a codebase that is easier to reason about and less awkward to extend."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is the quieter side of building a product: once the basic shape exists, the next useful step is often to make the internals less tangled. It gives future features somewhere cleaner to land."
+      },
+      {
+        "type": "heading",
+        "text": "Moving toward a better workspace"
+      },
+      {
+        "type": "paragraph",
+        "text": "There was also progress around the product experience itself, especially the idea of giving concepts a clearer dashboard and supporting revisions to plans. That points Draft Path toward something more durable than one-shot idea generation: a place where ideas can be reviewed, improved, and shaped over time."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made parts of Draft Path's data access cleaner and easier to maintain",
+          "Continued shaping the concept dashboard and plan revision flow",
+          "Added a small navigation polish pass so the product feels a little more deliberate"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, this was a maintenance-and-refinement week, but in a constructive way. Draft Path is moving from proving that the core idea works toward becoming a product that can keep growing without every new feature making the whole thing heavier."
+      }
+    ]
   }
 ]
