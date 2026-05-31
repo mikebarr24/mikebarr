@@ -324,5 +324,35 @@
         "text": "Overall, this felt like a week where Draft Path became more real. The product is no longer just about generating and shaping ideas; it now has more of the structure needed to become something people can try, pay for, and keep returning to."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-05-31",
+    "status": "published",
+    "title": "Weekly coding update, a quieter week",
+    "summary": "This was a quiet coding week, with no major public project changes to report and a useful pause after the recent Draft Path milestone.",
+    "publishedAt": "2026-05-31",
+    "readingTimeMinutes": 1,
+    "tags": [
+      "Weekly update",
+      "Progress"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a quieter coding week, with no major public project changes to report. After the recent push to make Draft Path feel more like a real paid product, there was no new visible feature milestone to write up this time."
+      },
+      {
+        "type": "heading",
+        "text": "Leaving room for a quieter week"
+      },
+      {
+        "type": "paragraph",
+        "text": "That is part of building things over time. Some weeks produce a clear launch or experiment; others are a pause between bigger steps. Rather than stretch a small amount of activity into a longer update, this one is simply a short record of a calmer week."
+      },
+      {
+        "type": "paragraph",
+        "text": "The next update can pick up when there is something useful to share."
+      }
+    ]
   }
 ]
