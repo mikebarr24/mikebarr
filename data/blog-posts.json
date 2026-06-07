@@ -354,5 +354,35 @@
         "text": "The next update can pick up when there is something useful to share."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-06-07",
+    "status": "published",
+    "title": "Weekly coding update, another quiet stretch",
+    "summary": "This was another quiet public coding week, with no major visible project changes to report across the usual repos.",
+    "publishedAt": "2026-06-07",
+    "readingTimeMinutes": 1,
+    "tags": [
+      "Weekly update",
+      "Progress"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was another quiet public coding week, with no major visible project changes to report across the usual projects. After a run of heavier Draft Path work and smaller browser-extension experiments, there was not a new feature milestone or release-shaped piece of progress to write up this time."
+      },
+      {
+        "type": "heading",
+        "text": "Keeping the record honest"
+      },
+      {
+        "type": "paragraph",
+        "text": "That is still worth noting. Building in public does not always mean every week has a neat story attached to it. Some weeks are quieter, some work happens away from public commits, and sometimes the useful thing is simply to leave the update short rather than stretch thin evidence into a bigger narrative."
+      },
+      {
+        "type": "paragraph",
+        "text": "So this week is a brief marker: no major public coding signal, and space for the next update to pick up when there is clearer progress to share."
+      }
+    ]
   }
 ]
