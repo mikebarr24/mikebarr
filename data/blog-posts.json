@@ -384,5 +384,52 @@
         "text": "So this week is a brief marker: no major public coding signal, and space for the next update to pick up when there is clearer progress to share."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-06-14",
+    "status": "published",
+    "title": "Weekly coding update, closing the loop in Draft Path",
+    "summary": "This week brought Draft Path back into focus, with work on a clearer concept dashboard and a more useful loop for revising plans.",
+    "publishedAt": "2026-06-14",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Draft Path"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "After a couple of quieter public updates, this week had a clearer Draft Path theme again. The work centred on making the product feel less like a one-way generator and more like a place where someone can keep shaping an idea after the first version appears."
+      },
+      {
+        "type": "heading",
+        "text": "From first draft to revision"
+      },
+      {
+        "type": "paragraph",
+        "text": "The main shift was around the concept dashboard. Instead of treating ideas and plans as separate stops, the product is being shaped into a smoother workspace where a person can review ideas, generate a plan, then loop back and revise that plan with fresh suggestions."
+      },
+      {
+        "type": "paragraph",
+        "text": "That matters because early ideas rarely become useful in a single pass. A stronger flow gives Draft Path more room to support the messy middle: comparing options, changing direction, and gradually turning a rough concept into something more concrete."
+      },
+      {
+        "type": "heading",
+        "text": "A more coherent product shape"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Worked on a clearer dashboard for moving between ideas and plans",
+          "Added support for revising a plan instead of starting from scratch",
+          "Tightened the journey after a concept is created so the next step feels more obvious"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "It is still a focused slice of work rather than a broad launch, but it points in a useful direction. Draft Path is becoming less about producing a single answer and more about helping someone think through an idea over a few deliberate rounds."
+      }
+    ]
   }
 ]
