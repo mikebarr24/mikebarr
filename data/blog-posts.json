@@ -431,5 +431,56 @@
         "text": "It is still a focused slice of work rather than a broad launch, but it points in a useful direction. Draft Path is becoming less about producing a single answer and more about helping someone think through an idea over a few deliberate rounds."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-06-21",
+    "status": "published",
+    "title": "Weekly coding update, making Draft Path easier to live with",
+    "summary": "This week was a focused Draft Path week, with work on account management, profile editing, and the continued shape of the concept dashboard.",
+    "publishedAt": "2026-06-21",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Draft Path"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a smaller but useful Draft Path week. After recent work on the concept dashboard and plan revision flow, the focus shifted toward some of the practical product pieces that make an app feel more complete once someone is actually using it."
+      },
+      {
+        "type": "heading",
+        "text": "Giving users more control"
+      },
+      {
+        "type": "paragraph",
+        "text": "The clearest piece of progress was account management. Draft Path now has more of the expected basics around editing a profile and managing an account, including the serious end of that flow: being able to delete an account when someone no longer wants to use the product."
+      },
+      {
+        "type": "paragraph",
+        "text": "That kind of work is not as visible as a new idea-generation feature, but it changes the trust level of the product. A tool feels more real when people can see and change their own details, understand where they stand, and leave cleanly if they need to."
+      },
+      {
+        "type": "heading",
+        "text": "Continuing the product shape"
+      },
+      {
+        "type": "paragraph",
+        "text": "There was also continued movement around the concept dashboard and the plan revision flow. That keeps Draft Path pointed in the same direction as last week: less of a one-off generator, more of a workspace where an early idea can be reviewed, shaped, and improved over time."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Added more complete account management to Draft Path",
+          "Made profile editing part of the product experience",
+          "Kept developing the dashboard and revision loop for shaping ideas into plans"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, this week was about rounding out the experience. The headline is not a big launch, but it is meaningful product work: giving people more control over their account while continuing to improve the core flow they came for in the first place."
+      }
+    ]
   }
 ]
