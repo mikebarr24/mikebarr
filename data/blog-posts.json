@@ -482,5 +482,56 @@
         "text": "Overall, this week was about rounding out the experience. The headline is not a big launch, but it is meaningful product work: giving people more control over their account while continuing to improve the core flow they came for in the first place."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-06-28",
+    "status": "published",
+    "title": "Weekly coding update, a practical weather experiment",
+    "summary": "This week mixed continued Draft Path work with a small new climbing-weather site for checking conditions around Northern Ireland.",
+    "publishedAt": "2026-06-28",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Experiments"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week had two strands: a small practical experiment for climbers, and another step forward on Draft Path's idea-to-plan workflow."
+      },
+      {
+        "type": "heading",
+        "text": "A weather tool with a clear use case"
+      },
+      {
+        "type": "paragraph",
+        "text": "The new project is a simple Northern Ireland climbing weather site. It is built to answer a very specific question quickly: what do the conditions look like at a few familiar climbing spots?"
+      },
+      {
+        "type": "paragraph",
+        "text": "Rather than becoming a heavy app, it keeps the shape lightweight. The site checks live weather in the browser and turns it into a quick condition score for places like Fair Head, Garron Point, The Mournes, and Boulder World. That makes it more like a useful field note than a general weather dashboard."
+      },
+      {
+        "type": "heading",
+        "text": "Still refining Draft Path"
+      },
+      {
+        "type": "paragraph",
+        "text": "Draft Path also continued in the background, with more work around the concept dashboard and the plan revision flow. That keeps the product moving toward the same goal as the last few weeks: helping someone return to an early idea, look at it from a few angles, and improve the plan instead of starting over each time."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Started a focused climbing-weather site for Northern Ireland",
+          "Kept the weather project intentionally small and practical",
+          "Continued shaping Draft Path around reviewing and revising plans"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, this was a good reminder that useful software does not always need to be big. One track was about a narrow tool for a real-world decision, while the other was about making an existing product feel more thoughtful over repeated use."
+      }
+    ]
   }
 ]
