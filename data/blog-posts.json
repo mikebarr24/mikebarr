@@ -533,5 +533,56 @@
         "text": "Overall, this was a good reminder that useful software does not always need to be big. One track was about a narrow tool for a real-world decision, while the other was about making an existing product feel more thoughtful over repeated use."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-07-05",
+    "status": "published",
+    "title": "Weekly coding update, opening up LogicalFitness",
+    "summary": "This week was a focused LogicalFitness week, adding more useful ways to see people and activity in the system while backing the work with tests.",
+    "publishedAt": "2026-07-05",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "LogicalFitness"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a focused LogicalFitness week. The visible work was not about a big new launch, but about making the product a little more useful and easier to trust as it grows."
+      },
+      {
+        "type": "heading",
+        "text": "Making activity easier to see"
+      },
+      {
+        "type": "paragraph",
+        "text": "The main theme was opening up more of the underlying fitness data. There was work on broader views for users and activities, plus a more specific way to find active users. That points toward a product that can do more than record individual pieces of information; it can start to show what is happening across the system."
+      },
+      {
+        "type": "paragraph",
+        "text": "That kind of progress is practical. Better access to users and activity makes it easier to build useful screens, spot patterns, and support the everyday questions a fitness product needs to answer."
+      },
+      {
+        "type": "heading",
+        "text": "Adding confidence around the basics"
+      },
+      {
+        "type": "paragraph",
+        "text": "The other important piece was test coverage around the user endpoints. That is a quieter kind of work, but it matters because these basic routes become the foundation for everything built on top of them."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Added ways to work with all users and all activities",
+          "Introduced a focused path for finding active users",
+          "Backed the user-facing API work with tests"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "Overall, it was a week of foundation-building: clearer access to the core data, a little more product shape around activity, and more confidence that the user-related pieces behave as expected."
+      }
+    ]
   }
 ]
