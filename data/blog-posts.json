@@ -584,5 +584,35 @@
         "text": "Overall, it was a week of foundation-building: clearer access to the core data, a little more product shape around activity, and more confidence that the user-related pieces behave as expected."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-07-12",
+    "status": "published",
+    "title": "Weekly coding update, a quieter public week",
+    "summary": "This was a quiet public coding week, with no fresh GitHub activity showing across the usual projects.",
+    "publishedAt": "2026-07-12",
+    "readingTimeMinutes": 1,
+    "tags": [
+      "Weekly update",
+      "Progress"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was a quiet public coding week, with no fresh GitHub activity showing across the usual projects. After recent work on LogicalFitness, Draft Path, and the small climbing-weather experiment, there was not a new visible feature or product milestone to write up this time."
+      },
+      {
+        "type": "heading",
+        "text": "Keeping the update short"
+      },
+      {
+        "type": "paragraph",
+        "text": "That is part of the rhythm of building things in the open. Some weeks have a clear thread: a new product shape, a useful experiment, or a stronger foundation. Other weeks are quieter, with less public signal to point at."
+      },
+      {
+        "type": "paragraph",
+        "text": "So this update stays intentionally brief: no major public coding progress to report this week, and room for the next post to pick up when there is clearer work to share."
+      }
+    ]
   }
 ]
