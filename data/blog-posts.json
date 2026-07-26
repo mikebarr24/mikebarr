@@ -644,5 +644,35 @@
         "text": "For this week, though, the honest version is simple: no major public coding progress to report, and no need to dress that up. The next fuller update can pick up when there is clearer visible work to share."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-07-26",
+    "status": "published",
+    "title": "Weekly coding update, keeping the public record light",
+    "summary": "This was another quiet public coding week, with no fresh GitHub activity showing across the usual projects.",
+    "publishedAt": "2026-07-26",
+    "readingTimeMinutes": 1,
+    "tags": [
+      "Weekly update",
+      "Progress"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This was another quiet public coding week. The weekly project check did not show fresh GitHub activity across the usual repos, so there is not a new visible feature, product decision, or experiment to write up this time."
+      },
+      {
+        "type": "heading",
+        "text": "Keeping the record honest"
+      },
+      {
+        "type": "paragraph",
+        "text": "The recent thread is still clear enough: Draft Path has been moving toward a more useful idea-to-plan workflow, LogicalFitness has had some foundation-building work, and smaller practical tools have appeared when there was a real use case to explore."
+      },
+      {
+        "type": "paragraph",
+        "text": "For this week, though, the visible signal is simple. No major public coding progress to report, and no need to pad the update beyond that. The next fuller post can pick up when there is clearer work to share."
+      }
+    ]
   }
 ]
