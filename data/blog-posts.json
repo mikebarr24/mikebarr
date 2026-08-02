@@ -674,5 +674,56 @@
         "text": "For this week, though, the visible signal is simple. No major public coding progress to report, and no need to pad the update beyond that. The next fuller post can pick up when there is clearer work to share."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-08-02",
+    "status": "published",
+    "title": "Weekly coding update, starting GetGear properly",
+    "summary": "This week brought a new project into view: GetGear, with the first pieces of the application foundation and database setup now in place.",
+    "publishedAt": "2026-08-02",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "Foundations"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "After a couple of quiet public weeks, this week has a clearer shape: I started a new project called GetGear and spent the visible coding time getting its foundations into place."
+      },
+      {
+        "type": "heading",
+        "text": "Moving from idea to structure"
+      },
+      {
+        "type": "paragraph",
+        "text": "The early work was not about presenting a polished product yet. It was about giving the project a sensible base to grow from: a fresh application scaffold, a cleaner project layout, and the first proper separation between the core domain of the product and the infrastructure that will support it."
+      },
+      {
+        "type": "paragraph",
+        "text": "That kind of setup matters because it shapes how quickly the next decisions can be made. Rather than burying everything in one starter app, GetGear now has room for the product idea, the data model, and the supporting services to develop without getting tangled straight away."
+      },
+      {
+        "type": "heading",
+        "text": "Getting the data layer real"
+      },
+      {
+        "type": "paragraph",
+        "text": "The other visible theme was database work. I added the pieces needed for Postgres and connected them through the application stack, turning the project from a template into something that can start storing and working with real information."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Started the GetGear application from a modern .NET foundation",
+          "Set up a cleaner project structure for product logic and infrastructure",
+          "Wired in Postgres so the next round of work can build on real persistence"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So this was a foundation week, but a useful one. GetGear is still at the beginning, and the public record does not yet show the full product experience. What it does show is the important first step: turning a blank starting point into a project that is ready for actual feature work."
+      }
+    ]
   }
 ]
