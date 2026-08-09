@@ -725,5 +725,56 @@
         "text": "So this was a foundation week, but a useful one. GetGear is still at the beginning, and the public record does not yet show the full product experience. What it does show is the important first step: turning a blank starting point into a project that is ready for actual feature work."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-08-09",
+    "status": "published",
+    "title": "Weekly coding update, giving GetGear its first shape",
+    "summary": "This week was another GetGear week, moving the project beyond its initial foundation and into the first clearer pieces of product structure.",
+    "publishedAt": "2026-08-09",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "GetGear"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week continued the early GetGear work. After getting the basic application foundation in place last time, the visible progress was about giving the project more of its own product shape."
+      },
+      {
+        "type": "heading",
+        "text": "Making the core idea clearer"
+      },
+      {
+        "type": "paragraph",
+        "text": "A useful theme this week was tightening how the app thinks about gear itself. Instead of leaving important details as loose text, the model now has a clearer way to describe what kind of gear item is being added. That is a small product decision, but it matters because it makes the rest of the app easier to build around."
+      },
+      {
+        "type": "paragraph",
+        "text": "I also added tests around the main gear item behaviour. That is the kind of quiet work that helps an early project stay flexible without becoming fragile straight away."
+      },
+      {
+        "type": "heading",
+        "text": "Starting the real user path"
+      },
+      {
+        "type": "paragraph",
+        "text": "The other clear step was connecting more of the application together. There is now a path for creating gear items through the app structure, and the web side has started to get actual pages and routing rather than just starter content."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Cleaned up the way GetGear represents different kinds of gear",
+          "Added tests around the core gear item behaviour",
+          "Started connecting the create-item flow and the first web pages"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So GetGear is still early, but it is moving from setup into shape. The project now has a clearer domain, a little more confidence around the basics, and the first pieces of a real product experience starting to appear."
+      }
+    ]
   }
 ]
