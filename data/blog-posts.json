@@ -776,5 +776,52 @@
         "text": "So GetGear is still early, but it is moving from setup into shape. The project now has a clearer domain, a little more confidence around the basics, and the first pieces of a real product experience starting to appear."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-08-23",
+    "status": "published",
+    "title": "Weekly coding update, giving GetGear a stronger first shape",
+    "summary": "This week brought a much fuller GetGear foundation into view, with the project split into clearer parts and the API hardened a little further.",
+    "publishedAt": "2026-08-23",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Product",
+      "GetGear"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week I brought GetGear into view with a much stronger foundation. The work was not about one shiny feature; it was about turning the project into a real application with a clearer shape and a better base to keep building on."
+      },
+      {
+        "type": "heading",
+        "text": "A cleaner core"
+      },
+      {
+        "type": "paragraph",
+        "text": "On the API side, I split the gear-item endpoints into their own class and added a global exception handler. That makes the service easier to read and gives it a more deliberate shape from the start."
+      },
+      {
+        "type": "paragraph",
+        "text": "The project now also has a clearer separation between the domain, application, infrastructure, and web UI. That kind of structure matters early because it gives the next product decisions somewhere sensible to live."
+      },
+      {
+        "type": "heading",
+        "text": "What shipped"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Set up the GetGear solution across API, app host, web, domain, infrastructure, and tests",
+          "Added a global exception handler and moved gear-item endpoints into their own class",
+          "Lined up the first round of tests so the basics have some protection"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So this was a bigger-than-usual foundation week, but it still has a single story: GetGear is no longer just an idea. It now looks and behaves like a project with enough structure to support the next real product decisions."
+      }
+    ]
   }
 ]
