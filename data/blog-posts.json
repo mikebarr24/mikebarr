@@ -823,5 +823,56 @@
         "text": "So this was a bigger-than-usual foundation week, but it still has a single story: GetGear is no longer just an idea. It now looks and behaves like a project with enough structure to support the next real product decisions."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-08-30",
+    "status": "published",
+    "title": "Weekly coding update, hardening the next pieces",
+    "summary": "This week combined a stronger GetGear foundation with more work on logical-fitness-app, where the focus was on flexibility, CI, and keeping the codebase tidy.",
+    "publishedAt": "2026-08-30",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Shipping",
+      "Engineering"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week was mostly about making active projects feel sturdier rather than chasing something flashy. The clearest signal came from logical-fitness-app, where I saw a flurry of shipping work around the plan generator, CI, and housekeeping, alongside continued API work in GetGear."
+      },
+      {
+        "type": "heading",
+        "text": "Making the foundations easier to trust"
+      },
+      {
+        "type": "paragraph",
+        "text": "In logical-fitness-app, the work suggested a project getting more deliberate about how it grows. I added flexibility around the plan generator, tightened up the build and test flow, and cleaned away some of the rough edges that can slow a project down once it starts to move faster."
+      },
+      {
+        "type": "paragraph",
+        "text": "That kind of work is not always dramatic on its own, but it usually matters. It makes the project easier to change, easier to validate, and less likely to accumulate hidden friction while the product shape is still evolving."
+      },
+      {
+        "type": "heading",
+        "text": "Keeping the product work moving"
+      },
+      {
+        "type": "paragraph",
+        "text": "GetGear also stayed active, with more work on the gear-item API and the endpoints that let the project move from structure into actual product behaviour. That continues the same theme: turning early foundations into something that can handle real use."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made logical-fitness-app more flexible around its plan generation flow",
+          "Kept CI and test coverage moving in the right direction",
+          "Continued the GetGear API work needed for a real gear-management experience"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "So this was a practical week, but not a thin one. The public signal shows real shipping work, useful cleanup, and a couple of projects becoming easier to trust. That felt like enough to publish."
+      }
+    ]
   }
 ]
