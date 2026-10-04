@@ -874,5 +874,52 @@
         "text": "So this was a practical week, but not a thin one. The public signal shows real shipping work, useful cleanup, and a couple of projects becoming easier to trust. That felt like enough to publish."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-10-04",
+    "status": "published",
+    "title": "Weekly coding update, making the fitness app more dependable",
+    "summary": "This week focused on turning the logical fitness app into a more dependable product, with clearer boundaries, stronger validation, and a more flexible plan-generation flow.",
+    "publishedAt": "2026-10-04",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Engineering",
+      "Product"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week was about making the logical fitness app easier to trust and easier to keep changing. The work was spread across the plan-generation flow, the project structure, and the checks that protect it, but it had one clear theme: turning promising pieces into a more dependable product."
+      },
+      {
+        "type": "heading",
+        "text": "More flexible plans"
+      },
+      {
+        "type": "paragraph",
+        "text": "The plan generator now has a clearer way to work with different options and providers. I tightened the athlete information it receives, added validation before generated plans are saved, and moved the project towards a single, more deliberate provider path. That should make the behaviour easier to reason about while leaving room for the product to evolve."
+      },
+      {
+        "type": "heading",
+        "text": "Structure that supports progress"
+      },
+      {
+        "type": "paragraph",
+        "text": "I also spent time improving the shape of the codebase. Requests, handlers, DTOs, and repositories are now separated more clearly, while the architecture tests and CI checks do more to catch unwanted drift. These changes are not flashy, but they reduce friction for the next feature and make the system's boundaries easier to see."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made plan generation more configurable and validated its options and output",
+          "Improved the information passed into generated training plans",
+          "Strengthened architecture tests, CI coverage, and the organisation of the application code"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The result is a quieter kind of progress: fewer hidden assumptions, clearer responsibilities, and a better base for building the next useful part of the app."
+      }
+    ]
   }
 ]
