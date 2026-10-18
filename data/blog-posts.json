@@ -921,5 +921,49 @@
         "text": "The result is a quieter kind of progress: fewer hidden assumptions, clearer responsibilities, and a better base for building the next useful part of the app."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-10-18",
+    "status": "published",
+    "title": "Weekly coding update, making issue tracking more useful",
+    "summary": "This week focused on making the logical fitness app's issue workflow clearer, with better hierarchy, blocker visibility, and links between issues and pull requests.",
+    "publishedAt": "2026-10-18",
+    "readingTimeMinutes": 2,
+    "tags": [
+      "Weekly update",
+      "Productivity",
+      "Shipping"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week’s visible coding work centred on a practical problem in logical-fitness-app: making the issue workflow easier to understand at a glance. The changes were small enough to stay focused, but together they make the project’s planning and progress more legible."
+      },
+      {
+        "type": "heading",
+        "text": "A clearer picture of work in progress"
+      },
+      {
+        "type": "paragraph",
+        "text": "The issue list now carries more useful context. It can show open blockers, reveal how issues relate to one another, and connect the work back to the pull requests that are moving it forward. That turns a flat list into something closer to a working map of the project."
+      },
+      {
+        "type": "heading",
+        "text": "Improving the workflow around it"
+      },
+      {
+        "type": "list",
+        "items": [
+          "Added a list-issues workflow that presents issues as a hierarchy",
+          "Made open blockers visible in the issue table",
+          "Linked issues with the pull requests that address them",
+          "Introduced clearer issue forms and a more deliberate distinction between product work and actions"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The common thread was not adding more process for its own sake. It was making the existing work easier to navigate: what depends on what, what is currently blocked, and which changes are already on their way through the codebase. That feels like useful groundwork for keeping a growing project understandable."
+      }
+    ]
   }
 ]
