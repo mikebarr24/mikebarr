@@ -965,5 +965,57 @@
         "text": "The common thread was not adding more process for its own sake. It was making the existing work easier to navigate: what depends on what, what is currently blocked, and which changes are already on their way through the codebase. That feels like useful groundwork for keeping a growing project understandable."
       }
     ]
+  },
+  {
+    "slug": "weekly-coding-update-2026-10-25",
+    "status": "published",
+    "title": "Weekly coding update, turning experiments into clearer products",
+    "summary": "This week combined a burst of practical work on a sailing results app with deeper product discovery across software ideas and continued hardening of the logical fitness app.",
+    "publishedAt": "2026-10-25",
+    "readingTimeMinutes": 3,
+    "tags": [
+      "Weekly update",
+      "Experiments",
+      "Product"
+    ],
+    "content": [
+      {
+        "type": "paragraph",
+        "text": "This week had a strong mix of building and figuring things out. I pushed a small sailing results app from a basic idea towards something people could actually use, while also running several structured research passes on possible software opportunities and keeping the logical fitness app moving underneath it all."
+      },
+      {
+        "type": "heading",
+        "text": "A small app becoming usable"
+      },
+      {
+        "type": "paragraph",
+        "text": "The sailing project got a concentrated round of product work. Results are now stored centrally so everyone can see the same data, clubs can be opened by code from a simple landing page, and the interface has been reshaped for phones. Tables that do not fit become cards, inputs behave better on iOS, and result codes are presented in plainer language with an explanation when needed."
+      },
+      {
+        "type": "paragraph",
+        "text": "That is a useful transition for an early app: it is no longer just demonstrating the calculation. It is starting to account for how a real group would open it, share it, and use it on the device they actually have in front of them."
+      },
+      {
+        "type": "heading",
+        "text": "Testing ideas before committing to them"
+      },
+      {
+        "type": "paragraph",
+        "text": "I also spent time on a different kind of progress: researching and screening possible software opportunities. Several passes explored ideas around the climbing industry, reducing technology use, and a change-approval problem. The important part was not simply collecting ideas, but applying a filter and parking a lead when it did not yet look strong enough."
+      },
+      {
+        "type": "list",
+        "items": [
+          "Made the sailing results app more usable and shareable on phones",
+          "Added clearer explanations around result codes and simplified the flow for joining a club",
+          "Ran multiple research passes and recorded which software opportunities were worth taking further",
+          "Continued updates, testing, and product modelling in the logical fitness app"
+        ]
+      },
+      {
+        "type": "paragraph",
+        "text": "The common thread was turning uncertainty into something more concrete: a rough app into a more usable product, and loose ideas into decisions about what deserves more attention. That feels like a meaningful week of progress even though the work crossed several projects."
+      }
+    ]
   }
 ]
